@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  color: #feedda;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  max-width: 960px;
+}
+.container {
+  max-width: 300px;
+
+  padding: 40px 50px;
+}
+.sedans {
+  border-radius: 10px 0px 00px 10px;
+  background: #e28525;
+}
+.suvs {
+  background: #016972;
+}
+.luxury {
+  background: #00403f;
+  border-radius: 0px 10px 10px 00px;
+}
+.sedans .button {
+  color: #e28525;
+}
+.suvs .button {
+  color: #016972;
+}
+.luxury .button {
+  color: #00403f;
+}
+
+.container h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 40px 0px;
+}
+.container p {
+  font-weight: normal;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.6;
+  height: 150px;
+}
+.container .button {
+  border-radius: 50px;
+  width: 150px;
+  display: block;
+  padding: 14px;
+  margin-top: 80px;
+  background: #feedda;
+  border: 1px solid #feedda;
+  transition: 200ms;
+  font-family: "Outfit", sans-serif;
+}
+
+.container .button:hover {
+  background: none;
+  color: #feedda;
+}
+
+.footer {
+  font-size: 11px;
+  text-align: center;
+  color: #000;
+  position: absolute;
+  bottom: 1px;
+}
+
+.footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 630px) {
+  .main {
+    display: grid;
+  }
+  .sedans {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .luxury {
+    border-radius: 0px 0px 10px 10px;
+  }
+  .footer {
+    position: relative;
+  }
+}
